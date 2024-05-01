@@ -60,8 +60,7 @@ Distributed under the Apache License 2.0. See `LICENSE` for more information.
 
 ### Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
-
+Forobeta: [https://forobeta.com/members/prothone.307297/](https://forobeta.com/members/prothone.307297/)
 Project Link: [https://github.com/liwei-gif/Open-Download-Manager](https://github.com/liwei-gif/Open-Download-Manager)
 
 ---
