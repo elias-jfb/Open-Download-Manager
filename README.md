@@ -2,7 +2,7 @@
 
 ### Description
 
-Welcome to Open Download Manager v1.0, an open-source, multi-threaded file downloader developed using Python and Tkinter. This tool is designed to help you download files from the internet in multiple parts concurrently, potentially increasing the download speed by leveraging multiple server connections.
+Welcome to Open Download Manager, an open-source, multi-threaded file downloader developed using Python and Tkinter. This tool is designed to help you download files from the internet in multiple parts concurrently, potentially increasing the download speed by leveraging multiple server connections.
 
 ### Features
 
