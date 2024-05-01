@@ -1,12 +1,4 @@
-
-<p align="center">
-  <a href="https://github.com/liwei-gif/Open-Download-Manager/releases"><img src="https://img.shields.io/github/release/liwei-gif/Open-Download-Manager" alt="Release version"></a>
-  <a href="https://github.com/liwei-gif/Open-Download-Manager/actions/workflows/release.yml"><img src="https://github.com/liwei-gif/Open-Download-Manager/workflows/Build/badge.svg" alt="Build status"></a>
-  <a href="https://github.com/liwei-gif/Open-Download-Manager/actions/workflows/beta-pack.yml"><img src="https://github.com/liwei-gif/Open-Download-Manager/workflows/Build%20Beta/badge.svg" alt="Build status"></a>
-  <a href="https://github.com/liwei-gif/Open-Download-Manager/tree/dev"><img src="https://img.shields.io/github/package-json/v/liwei-gif/Open-Download-Manager/dev" alt="Dev branch version"></a>
-</p>
-
-<h2 align="center">Open Download Manager</h2>
+<h1 align="center">Open Download Manager</h1>
 
 ### Description
 
@@ -30,7 +22,7 @@ Welcome to Open Download Manager v1.0, an open-source, multi-threaded file downl
    ```
 3. **Run the Application**:
    ```bash
-   python download_manager.py
+   python main.py
    ```
 
 Once the application is running:
