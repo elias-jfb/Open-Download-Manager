@@ -25,6 +25,13 @@ Welcome to Open Download Manager, an open-source, multi-threaded file downloader
    python main.py
    ```
 
+Requeriments:
+
+Request   
+```bash
+pip install requests
+```
+
 Once the application is running:
 - Enter the URL of the file you wish to download in the URL field.
 - Specify the number of parts you want the file to be split into for downloading.
