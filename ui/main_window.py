@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import filedialog, ttk, messagebox
 from downloader.download_manager import DownloadManager
+from .menu_bar import MenuBar
+from .download_list import DownloadList
 from threading import Thread
 import os
 import re
@@ -8,10 +10,12 @@ import re
 class MainWindow:
     def __init__(self, root):
         self.root = root
-        self.root.title("Simple Download Manager")
-        self.url = tk.StringVar()
-        self.num_chunks = tk.IntVar(value=4)
-        self.save_path = tk.StringVar(value=os.path.expanduser("~/Downloads"))
+        self.root.title("Open Download Manager")
+        self.menu_bar = MenuBar(root)  # Integrate the menu bar
+        self.download_list = DownloadList(root) # integrate the download list
+        self.url = tk.StringVar() # Create a StringVar to store the URL
+        self.num_chunks = tk.IntVar(value=4) # Create an IntVar to store the number of chunks
+        self.save_path = tk.StringVar(value=os.path.expanduser("~/Downloads"))# Create a StringVar to store the save path
 
         # Setup the UI
         ttk.Label(root, text="URL:").grid(row=0, column=0, padx=5, pady=5)
