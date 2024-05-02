@@ -11,3 +11,21 @@ class DownloadList:
         self.tree.heading('Speed', text='Speed')
         self.tree.heading('Size', text='Size')
         self.tree.pack(expand=True, fill='both')
+        self.downloads = {}  # Dictionary to keep track of downloads
+
+    def add_download(self, file_name, status, progress, speed, size):
+        # Adds a new download to the tree view
+        item_id = self.tree.insert("", "end", values=(status, progress, speed, size))
+        self.downloads[file_name] = item_id
+
+    def update_download(self, file_name, status=None, progress=None, speed=None, size=None):
+        # Updates an existing download's status in the tree view
+        item_id = self.downloads[file_name]
+        current_values = list(self.tree.item(item_id, 'values'))
+        new_values = [
+            status if status is not None else current_values[0],
+            progress if progress is not None else current_values[1],
+            speed if speed is not None else current_values[2],
+            size if size is not None else current_values[3],
+        ]
+        self.tree.item(item_id, values=new_values)
