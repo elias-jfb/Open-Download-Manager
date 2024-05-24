@@ -43,4 +43,5 @@ class DownloadManager:
             f.write(response.content)
         if self.download_list:
             # This would ideally calculate progress per chunk
-            self.download_list.update_download(DOWNLOAD_FILE_NAME, "Downloading", f"{int((end/start)*100)}%", "Calculating", "-")
+            progress_percentage = int((end / start) * 100) if start != 0 else 0
+            self.download_list.update_download(DOWNLOAD_FILE_NAME, "Downloading", f"{progress_percentage}%", "Calculating", "-")
