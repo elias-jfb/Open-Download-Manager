@@ -1,8 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
+import sv_ttk  # Import the sv_ttk package
 
 class DownloadList:
     def __init__(self, root):
+        sv_ttk.use_dark_theme()  # Use the Sun Valley dark theme
+        # sv_ttk.use_light_theme()  # Uncomment this line to use the Sun Valley light theme instead
+
         self.frame = ttk.Frame(root, padding="3 3 12 12")
         self.frame.grid(row=1, column=0, columnspan=3, sticky=(tk.W, tk.E, tk.N, tk.S))
         self.tree = ttk.Treeview(self.frame, columns=('Status', 'Progress', 'Speed', 'Size'), show='headings')
